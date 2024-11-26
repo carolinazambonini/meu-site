@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda com Categorias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda com Categorias</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Nova tarefa">
+            <select id="categorySelect">
+                <option value="Pessoal">Pessoal</option>
+                <option value="Trabalho">Trabalho</option>
+                <option value="Estudos">Estudos</option>
+            </select>
+            <button id="addTaskButton">Adicionar</button>
+        </div>
+        <div id="categories">
+            <h2>Pessoal</h2>
+            <ul id="personalTasks" class="taskList"></ul>
+            
+            <h2>Trabalho</h2>
+            <ul id="workTasks" class="taskList"></ul>
+            
+            <h2>Estudos</h2>
+            <ul id="studyTasks" class="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão com JavaScript</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <button id="meuBotao">Clique aqui</button>
+
+  <script>
+    // Seleciona o botão pelo ID
+    const botao = document.getElementById("meuBotao");
+
+    // Adiciona um evento de clique ao botão
+    botao.addEventListener("click", function () {
+      alert("Você ganhou um parabéns!");
+    });
+  </script>
+</body>
+</html>
